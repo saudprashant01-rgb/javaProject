@@ -105,6 +105,8 @@ public class ATM {
             System.out.println("Entered number is not register");
         }
 
+        System.out.println(" thanks for using");
+
             
        
 
