@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ATM {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int Balance = 2000;
         System.out.println("Enter your Account Number");
@@ -63,27 +63,28 @@ public class ATM {
                             System.out.println("how much balance you want to deposit?");
                             int deposit = sc.nextInt();
                             System.out.println(" NOW, Insert the money into the atm ");
-                            System.out.println("enter 1 if you have insert money into atm");
-                            int confirm = sc.nextInt();
-                            if (confirm == 1)
-                            {
-                            System.out.println("wait a minute, machine is counting money");
-                            System.out.println("again enter 1 to see your new balace");
-                            int newbalance = sc.nextInt();
-                            if ( newbalance ==1)
-                            {
+                            //System.out.println("enter 1 if you have insert money into atm");
+                            //int confirm = sc.nextInt();
+                            //if (confirm == 1)
+                            //{
+                            System.out.print("wait a minute, machine is counting money");
+                            Thread.sleep(2000);
+                          //  System.out.println("again enter 1 to see your new balace");
+                         //   int newbalance = sc.nextInt();
+                           // if ( newbalance ==1)
+                         //   {
                                 int z;
                                 z = deposit + Balance;
-                                System.out.println("your new balance = " + z);
-                            }
-                            else{
-                                System.out.println("you have entered another number(make sure that you have entered 1 number for confirmation)");
-                            }
+                                System.out.print("\ryour new balance = " + z + "                         ");
+                            //}
+                           // else{
+                           //     System.out.println("you have entered another number(make sure that you have entered 1 number for confirmation)");
+                            //}
                             
-                            }
-                            else{
-                                System.out.println("you have entered another number(make sure that you have entered 1 number for confirmation)");
-                            }
+                           // }
+                            //else{
+                           //     System.out.println("you have entered another number(make sure that you have entered 1 number for confirmation)");
+                            //}
 
                         }
                        else if (opt == 4)
