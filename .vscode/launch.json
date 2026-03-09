@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "practice",
+      "request": "launch",
+      "mainClass": "practice",
+      "projectName": "javaProject_ad62527e"
+    },
+    {
+      "type": "java",
+      "name": "text",
+      "request": "launch",
+      "mainClass": "text",
+      "projectName": "javaProject_ad62527e"
+    },
+    {
+      "type": "java",
       "name": "tax",
       "request": "launch",
       "mainClass": "tax",
